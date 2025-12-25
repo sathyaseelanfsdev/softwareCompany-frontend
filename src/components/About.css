@@ -1,0 +1,53 @@
+section {
+  padding: 80px 12%;
+}
+
+.about-hero {
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 2.6rem;
+  color: #ffffff;
+}
+
+.about-hero p {
+  max-width: 720px;
+  margin: 20px auto;
+  color: #cbd5f5;
+  font-size: 1.05rem;
+}
+
+.about-section h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  max-width: 850px;
+  margin-bottom: 16px;
+  color: #cbd5f5;
+}
+
+.dark {
+  background: #020617;
+  border-radius: 20px;
+}
+
+.work-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.point {
+  background: #020617;
+  padding: 25px;
+  border-radius: 16px;
+}
+
+.point h4 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}

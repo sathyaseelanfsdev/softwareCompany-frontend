@@ -1,0 +1,26 @@
+import './Navigation.css';
+import { useNavigate,Link } from 'react-router';
+
+export function Navigation(){
+  let navigate = useNavigate();
+  return(
+    <>
+      <nav class="navbar">
+        <div class="logo">Codewave Technologies</div>
+
+        <ul class="nav-links">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/services">Services</Link></li>
+          <li><Link to="/projects">Projects</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+        </ul>
+
+        
+        <button className="nav-btn" onClick={() => navigate("/contact")}>
+          Get Started
+        </button>
+      </nav>
+    </>
+  );
+}

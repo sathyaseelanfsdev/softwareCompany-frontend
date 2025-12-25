@@ -1,0 +1,54 @@
+.projects-hero {
+  padding: 80px 12%;
+  text-align: center;
+}
+
+.projects-hero h1 {
+  font-size: 2.6rem;
+  color: #ffffff;
+}
+
+.projects-hero p {
+  max-width: 750px;
+  margin: 20px auto;
+  color: #cbd5f5;
+  font-size: 1.05rem;
+}
+
+.projects-section {
+  padding: 40px 12% 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #020617;
+  padding: 30px;
+  border-radius: 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card h3 {
+  color: #38bdf8;
+  margin-bottom: 12px;
+}
+
+.project-card p {
+  color: #cbd5f5;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  font-weight: 500;
+}
+
+.tech {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
