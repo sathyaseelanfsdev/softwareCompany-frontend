@@ -5,10 +5,10 @@ export function Navigation(){
   let navigate = useNavigate();
   return(
     <>
-      <nav class="navbar">
-        <div class="logo">Codewave Technologies</div>
+      <nav className="navbar">
+        <div className="logo">Codewave Technologies</div>
 
-        <ul class="nav-links">
+        <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/services">Services</Link></li>

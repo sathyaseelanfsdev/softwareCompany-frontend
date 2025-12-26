@@ -6,23 +6,23 @@ export function HomePage(){
     <>
       <title>Home</title>
       <Navigation/>
-      <section class="hero">
+      <section className="hero">
         <h1>Building Modern Web Applications That Scale</h1>
         <p>
           We create fast, secure, and scalable AI-driven, full-stack solutions for startups and growing businesses 
           specializing in intelligent systems,cloud architecture, and cutting-edge development
         </p>
-        <div class="hero-buttons">
-          <a href="/services" class="btn primary">View Services</a>
-          <a href="/projects" class="btn secondary">See Projects</a>
+        <div className="hero-buttons">
+          <a href="/services" className="btn primary">View Services</a>
+          <a href="/projects" className="btn secondary">See Projects</a>
         </div>
       </section>
 
-      <section class="services">
+      <section className="services">
         <h2>What We Do</h2>
-        <div class="service-cards">
+        <div className="service-cards">
 
-          <div class="card">
+          <div className="card">
             <h3>Web Application Development</h3>
             <p>
               Custom, responsive, and performance-driven web applications built using
@@ -30,21 +30,21 @@ export function HomePage(){
             </p>
           </div>
 
-          <div class="card">
+          <div className="card">
             <h3>Backend & API Development</h3>
             <p>
               Secure and scalable REST APIs using Node.js, Express, and MongoDB.
             </p>
           </div>
 
-          <div class="card">
+          <div className="card">
             <h3>UI/UX Implementation</h3>
             <p>
               Clean and intuitive user interfaces focused on usability and experience.
             </p>
           </div>
 
-          <div class="card">
+          <div className="card">
             <h3>Cloud & Deployment</h3>
             <p>
               Application deployment, optimization, and version control using modern tools.
@@ -53,24 +53,24 @@ export function HomePage(){
 
         </div>
 
-        <a href="/services" class="link">View all services →</a>
+        <a href="/services" className="link">View all services →</a>
       </section>
 
-      <section class="why-us">
+      <section className="why-us">
         <h2>Why Codewave Technology</h2>
-        <div class="reasons">
+        <div className="reasons">
 
-          <div class="reason">
+          <div className="reason">
             <h4>Scalable Architecture</h4>
             <p>Applications designed to grow with your business.</p>
           </div>
 
-          <div class="reason">
+          <div className="reason">
             <h4>Clean & Maintainable Code</h4>
             <p>Readable, structured, and easy to extend.</p>
           </div>
 
-          <div class="reason">
+          <div className="reason">
             <h4>Modern Tech Stack</h4>
             <p>React, Node.js, MongoDB, Express, and best practices.</p>
           </div>
@@ -78,11 +78,11 @@ export function HomePage(){
         </div>
       </section>
 
-      <section class="projects">
+      <section className="projects">
         <h2>Featured Projects</h2>
-        <div class="project-cards">
+        <div className="project-cards">
 
-          <div class="project">
+          <div className="project">
             <h3>Task Manager Platform</h3>
             <p>
               A full-stack task management app with authentication and role-based access.
@@ -90,7 +90,7 @@ export function HomePage(){
             <span>React • Node • MongoDB</span>
           </div>
 
-          <div class="project">
+          <div className="project">
             <h3>Company Portfolio Website</h3>
             <p>
               A responsive business website with dynamic routing and clean UI.
@@ -100,13 +100,13 @@ export function HomePage(){
 
         </div>
 
-        <a href="/projects" class="link">View all projects →</a>
+        <a href="/projects" className="link">View all projects →</a>
       </section>
 
-      <section class="tech">
+      <section className="tech">
         <h2>Technolgies we use</h2>
-        <div class="technology-grid">
-          <div class="sub-technology-grid">
+        <div className="technology-grid">
+          <div className="sub-technology-grid">
             <h3>Programming Languages</h3>
             <p>•JavaScript</p>
             <p>•TypeScript</p>
@@ -123,7 +123,7 @@ export function HomePage(){
             <p>•Dart</p>
             <p>•Ruby</p>
           </div>
-          <div class="sub-technology-grid">
+          <div className="sub-technology-grid">
             <h3>Frontend Frameworks & Libraries</h3>
             <p>• React</p>
             <p>• Angular</p>
@@ -140,7 +140,7 @@ export function HomePage(){
             <p>• Alpine.js</p>
             <p>• Preact</p>
           </div>
-          <div class="sub-technology-grid">
+          <div className="sub-technology-grid">
             <h3>Backend frameworks</h3>
             <p>• Node.js</p>
             <p>• Express.js</p>
@@ -158,7 +158,7 @@ export function HomePage(){
             <p>• AdonisJS</p>
             <p>• Fastify</p>
           </div>
-          <div class="sub-technology-grid">
+          <div className="sub-technology-grid">
             <h3>Artificial intelligence and Date science</h3>
             <p>• PyTorch</p>
             <p>• TensorFlow</p>
@@ -171,7 +171,7 @@ export function HomePage(){
             <p>• Claude API</p>
             <p>• GitHub Copilot</p>
           </div>
-          <div class="sub-technology-grid">
+          <div className="sub-technology-grid">
             <h3>Infrastructure & Cloud</h3>
             <p>• Amazon Web Services (AWS)</p>
             <p>• Microsoft Azure</p>
@@ -187,10 +187,10 @@ export function HomePage(){
         </div>
       </section>
 
-      <section class="cta">
+      <section className="cta">
         <h2>Have an idea or a project in mind?</h2>
         <p>Let’s build something great together.</p>
-        <a href="/contact" class="btn primary">Contact Us</a>
+        <a href="/contact" className="btn primary">Contact Us</a>
       </section>
   </>
   );

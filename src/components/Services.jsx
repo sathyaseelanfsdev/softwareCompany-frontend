@@ -8,7 +8,7 @@ export function Services(){
 
       <Navigation/>
 
-      <section class="services-hero">
+      <section className="services-hero">
         <h1>Our Services</h1>
         <p>
           Codewave technologies provides comprehensive software development services covering
@@ -18,9 +18,9 @@ export function Services(){
         </p>
       </section>
 
-      <section class="services-section">
+      <section className="services-section">
 
-        <div class="service-card">
+        <div className="service-card">
           <h3>Frontend Development</h3>
           <p>
             We design and develop modern, responsive, and high-performance user
@@ -33,7 +33,7 @@ export function Services(){
           </p>
         </div>
 
-        <div class="service-card">
+        <div className="service-card">
           <h3>Backend Development</h3>
           <p>
             We build secure and scalable backend systems capable of handling complex
@@ -45,7 +45,7 @@ export function Services(){
           </p>
         </div>
 
-        <div class="service-card">
+        <div className="service-card">
           <h3>Full-Stack Application Development</h3>
           <p>
             From concept to deployment, we deliver complete full-stack applications
@@ -57,7 +57,7 @@ export function Services(){
           </p>
         </div>
 
-        <div class="service-card">
+        <div className="service-card">
           <h3>Cloud & DevOps Solutions</h3>
           <p>
             We help businesses deploy, scale, and manage applications using modern
@@ -69,7 +69,7 @@ export function Services(){
           </p>
         </div>
 
-        <div class="service-card">
+        <div className="service-card">
           <h3>AI & Machine Learning Solutions</h3>
           <p>
             We develop intelligent systems powered by machine learning models,
@@ -81,7 +81,7 @@ export function Services(){
           </p>
         </div>
 
-        <div class="service-card">
+        <div className="service-card">
           <h3>API Development & System Integration</h3>
           <p>
             We design and implement secure, scalable APIs that connect applications,
@@ -93,7 +93,7 @@ export function Services(){
           </p>
         </div>
 
-        <div class="service-card">
+        <div className="service-card">
           <h3>Multi-Language Software Development</h3>
           <p>
             We work with a wide range of programming languages and frameworks to
@@ -105,7 +105,7 @@ export function Services(){
           </p>
         </div>
 
-        <div class="service-card">
+        <div className="service-card">
           <h3>Software Consulting & Architecture</h3>
           <p>
             We provide technical consulting to help teams make informed decisions
@@ -117,7 +117,7 @@ export function Services(){
           </p>
         </div>
 
-        <div class="service-card">
+        <div className="service-card">
           <h3>Maintenance, Optimization & Support</h3>
           <p>
             We offer ongoing maintenance and support to keep applications secure,

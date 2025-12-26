@@ -6,7 +6,7 @@ export function Contact(){
     <>
       <title>contact</title>
       <Navigation/>
-      <section class="contact-hero">
+      <section className="contact-hero">
         <h1>Get in Touch</h1>
         <p>
           Have a project in mind or need a technology partner?
@@ -14,9 +14,9 @@ export function Contact(){
         </p>
       </section>
 
-      <section class="contact-section">
+      <section className="contact-section">
 
-        <div class="contact-info">
+        <div className="contact-info">
           <h2>Contact Information</h2>
           <p>
             We work with startups, enterprises, and individuals to deliver
@@ -27,12 +27,12 @@ export function Contact(){
           <p><strong>Phone:</strong> +91 12345 67890</p>
           <p><strong>Location:</strong> Remote • Global</p>
 
-          <p class="note">
+          <p className="note">
             Our team typically responds within 24 hours on business days.
           </p>
         </div>
 
-        <div class="contact-form">
+        <div className="contact-form">
           <h2>Send Us a Message</h2>
 
           <form>

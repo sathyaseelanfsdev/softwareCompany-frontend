@@ -7,7 +7,7 @@ export function About(){
       <title>About</title>
       <Navigation/>
 
-      <section class="about-hero">
+      <section className="about-hero">
     <h1>About Codewave Technology</h1>
     <p>
       Codewave Technology is a software development company delivering intelligent,
@@ -16,7 +16,7 @@ export function About(){
     </p>
       </section>
 
-      <section class="about-section">
+      <section className="about-section">
         <h2>Who We Are</h2>
         <p>
           We are a technology-focused software company working across frontend,
@@ -30,7 +30,7 @@ export function About(){
         </p>
       </section>
 
-      <section class="about-section dark">
+      <section className="about-section dark">
         <h2>What We Do</h2>
         <p>
           We provide end-to-end software development services, including frontend
@@ -39,11 +39,11 @@ export function About(){
         </p>
       </section>
 
-      <section class="about-section">
+      <section className="about-section">
         <h2>How We Work</h2>
 
-        <div class="work-points">
-          <div class="point">
+        <div className="work-points">
+          <div className="point">
             <h4>Requirement-Driven Development</h4>
             <p>
               We begin every project by understanding business goals and technical
@@ -51,7 +51,7 @@ export function About(){
             </p>
           </div>
 
-          <div class="point">
+          <div className="point">
             <h4>Scalable System Design</h4>
             <p>
               Our systems are designed to handle growth, performance, and future
@@ -59,7 +59,7 @@ export function About(){
             </p>
           </div>
 
-          <div class="point">
+          <div className="point">
             <h4>Quality & Best Practices</h4>
             <p>
               We follow clean coding standards, version control, testing, and
@@ -69,7 +69,7 @@ export function About(){
         </div>
       </section>
 
-      <section class="about-section dark">
+      <section className="about-section dark">
         <h2>Our Expertise</h2>
         <p>
           Our expertise spans frontend frameworks, backend architectures, cloud
@@ -83,7 +83,7 @@ export function About(){
         </p>
       </section>
 
-      <section class="about-section">
+      <section className="about-section">
         <h2>Our Vision</h2>
         <p>
           Our vision is to build software that not only functions well but also
