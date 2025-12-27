@@ -38,6 +38,8 @@
 .service-card p {
   color: #cbd5f5;
   font-size: 0.95rem;
+  
+  margin-bottom: 10px;
 }
 
 .service-card:hover {

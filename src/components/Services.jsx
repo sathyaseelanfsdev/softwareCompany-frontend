@@ -1,136 +1,93 @@
+import HeroSection from './HeroSection';
 import { Navigation } from './Navigation';
 import './Services.css';
 
-export function Services(){
+function ServiceCard({h,p1,p2,key}){
+  return(
+    <div key={key}className="service-card">
+      <h3>{h}</h3>
+      <p>{p1}</p>
+      <p>{p2}</p>
+    </div>
+  );
+}
+function ServiceMessages(){
+  const servicesArray=[
+      {
+      heading:"Frontend Development",
+      paragraph1:"We design and develop modern, responsive, and high-performance user interfaces that deliver excellent user experiences across devices.",
+      paragraph2:"Our frontend solutions focus on usability, accessibility, performance, and clean component-based architecture using modern frameworks and design principles.",
+      id:crypto.randomUUID()
+    },{
+      heading:"Backend Development",
+      paragraph1:"We build secure and scalable backend systems capable of handling complex business logic, large data volumes, and high user traffic.",
+      paragraph2:"Our backend services include database design, authentication systems, authorization, API development, and performance optimization.",
+      id:crypto.randomUUID()
+    },{
+      heading:"Full-Stack Application Development",
+      paragraph1:"From concept to deployment, we deliver complete full-stack applications with seamless integration between frontend and backend systems.",
+      paragraph2:"We ensure clean architecture, modular code structure, and maintainable systems that can evolve as business requirements grow.",
+      id:crypto.randomUUID()
+    },{
+      heading:"Cloud & DevOps Solutions",
+      paragraph1:"We help businesses deploy, scale, and manage applications using modern cloud platforms and DevOps practices.",
+      paragraph2:"Our services include cloud setup, CI/CD pipelines, infrastructure automation, monitoring, and performance optimization.",
+      id:crypto.randomUUID()
+    },{
+      heading:"AI & Machine Learning Solutions",
+      paragraph1:"We develop intelligent systems powered by machine learning models, automation tools, and AI-driven APIs.",
+      paragraph2:"Our AI solutions focus on data processing, prediction, automation, and integration of AI services into existing software platforms.",
+      id:crypto.randomUUID()
+    },{
+      heading:"API Development & System Integration",
+      paragraph1:"We design and implement secure, scalable APIs that connect applications, services, and third-party platforms.",
+      paragraph2:"Our integration services ensure smooth data flow, reliable communication, and long-term maintainability across systems.",
+      id:crypto.randomUUID()
+    },{
+      heading:"Multi-Language Software Development",
+      paragraph1:"We work with a wide range of programming languages and frameworks to choose the right technology for each problem.",
+      paragraph2:"This flexibility allows us to build efficient solutions across different platforms, industries, and technical requirements.",
+      id:crypto.randomUUID()
+    },{
+      heading:"Software Consulting & Architecture",
+      paragraph1:"We provide technical consulting to help teams make informed decisions about system architecture, scalability, and technology selection.",
+      paragraph2:"Our consulting services help reduce technical debt and align software systems with long-term business goals.",
+      id:crypto.randomUUID()
+    },{
+      heading:"Maintenance, Optimization & Support",
+      paragraph1:"We offer ongoing maintenance and support to keep applications secure, fast, and reliable.",
+      paragraph2:"Our services include bug fixes, performance tuning, upgrades, and continuous improvements to ensure long-term stability.",
+      id:crypto.randomUUID()
+    }
+  ];
+  return(
+    <>
+      {
+        servicesArray.map((value)=>{
+          return(
+            <ServiceCard h={value.heading} p1={value.paragraph1} p2={value.paragraph2} key={value.id}/>
+          );
+        })
+      }
+    </>
+  );
+}
+export function Services(){  
   return(
     <>
       <title>services</title>
-
       <Navigation/>
-
-      <section className="services-hero">
-        <h1>Our Services</h1>
-        <p>
-          Codewave technologies provides comprehensive software development services covering
+      <HeroSection 
+        h="Our Services" 
+        p="Codewave technologies provides comprehensive software development services covering
           frontend engineering, backend systems, cloud infrastructure, and artificial
           intelligence. We work with modern technologies to build scalable and
-          future-ready solutions.
-        </p>
-      </section>
-
+          future-ready solutions." 
+        name="services-hero"
+      />
       <section className="services-section">
-
-        <div className="service-card">
-          <h3>Frontend Development</h3>
-          <p>
-            We design and develop modern, responsive, and high-performance user
-            interfaces that deliver excellent user experiences across devices.
-          </p>
-          <p>
-            Our frontend solutions focus on usability, accessibility, performance,
-            and clean component-based architecture using modern frameworks and
-            design principles.
-          </p>
-        </div>
-
-        <div className="service-card">
-          <h3>Backend Development</h3>
-          <p>
-            We build secure and scalable backend systems capable of handling complex
-            business logic, large data volumes, and high user traffic.
-          </p>
-          <p>
-            Our backend services include database design, authentication systems,
-            authorization, API development, and performance optimization.
-          </p>
-        </div>
-
-        <div className="service-card">
-          <h3>Full-Stack Application Development</h3>
-          <p>
-            From concept to deployment, we deliver complete full-stack applications
-            with seamless integration between frontend and backend systems.
-          </p>
-          <p>
-            We ensure clean architecture, modular code structure, and maintainable
-            systems that can evolve as business requirements grow.
-          </p>
-        </div>
-
-        <div className="service-card">
-          <h3>Cloud & DevOps Solutions</h3>
-          <p>
-            We help businesses deploy, scale, and manage applications using modern
-            cloud platforms and DevOps practices.
-          </p>
-          <p>
-            Our services include cloud setup, CI/CD pipelines, infrastructure
-            automation, monitoring, and performance optimization.
-          </p>
-        </div>
-
-        <div className="service-card">
-          <h3>AI & Machine Learning Solutions</h3>
-          <p>
-            We develop intelligent systems powered by machine learning models,
-            automation tools, and AI-driven APIs.
-          </p>
-          <p>
-            Our AI solutions focus on data processing, prediction, automation, and
-            integration of AI services into existing software platforms.
-          </p>
-        </div>
-
-        <div className="service-card">
-          <h3>API Development & System Integration</h3>
-          <p>
-            We design and implement secure, scalable APIs that connect applications,
-            services, and third-party platforms.
-          </p>
-          <p>
-            Our integration services ensure smooth data flow, reliable communication,
-            and long-term maintainability across systems.
-          </p>
-        </div>
-
-        <div className="service-card">
-          <h3>Multi-Language Software Development</h3>
-          <p>
-            We work with a wide range of programming languages and frameworks to
-            choose the right technology for each problem.
-          </p>
-          <p>
-            This flexibility allows us to build efficient solutions across different
-            platforms, industries, and technical requirements.
-          </p>
-        </div>
-
-        <div className="service-card">
-          <h3>Software Consulting & Architecture</h3>
-          <p>
-            We provide technical consulting to help teams make informed decisions
-            about system architecture, scalability, and technology selection.
-          </p>
-          <p>
-            Our consulting services help reduce technical debt and align software
-            systems with long-term business goals.
-          </p>
-        </div>
-
-        <div className="service-card">
-          <h3>Maintenance, Optimization & Support</h3>
-          <p>
-            We offer ongoing maintenance and support to keep applications secure,
-            fast, and reliable.
-          </p>
-          <p>
-            Our services include bug fixes, performance tuning, upgrades, and
-            continuous improvements to ensure long-term stability.
-          </p>
-        </div>
-
+        <ServiceMessages/>
       </section>
-
     </>
   );
 }
