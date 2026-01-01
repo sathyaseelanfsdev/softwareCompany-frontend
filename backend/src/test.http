@@ -1,8 +1,0 @@
-POST http://localhost:5000/api/contact
-Content-Type: application/json
-
-{
-  "name": "Final Test",
-  "email": "final@test.com",
-  "message": "If this saves, backend is finished"
-}

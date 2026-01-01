@@ -11,18 +11,15 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// MongoDB connection
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected ✅"))
   .catch((err) => console.error("MongoDB error ❌", err));
 
-// health check
 app.get("/", (req, res) => {
   res.send("Backend is running 🚀");
 });
 
-// contact API
 app.post("/api/contact", async (req, res) => {
   try {
     const { name, email, message } = req.body;
